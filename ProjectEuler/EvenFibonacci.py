@@ -4,26 +4,26 @@ def evenFibSum(limit) :
   
     # Initialize first two even prime numbers 
     # and their sum 
-    ef1 = 0
-    ef2 = 2
-    summation = ef1 + ef2 
+    a = 0
+    b = 2
+    summation = a + b 
       
     # calculating sum of even Fibonacci value 
-    while (ef2 <= limit) : 
+    while (b <= limit) : 
   
         # get next even value of Fibonacci  
         # sequence 
-        ef3 = 4 * ef2 + ef1 
+        c = 4 * b + a 
   
         # If we go beyond limit, we break loop 
-        if (ef3 > limit) : 
+        if (c > limit) : 
             break
   
         # Move to next even number and update 
         # sum 
-        ef1 = ef2 
-        ef2 = ef3 
-        summation = summation + ef2 
+        a = b
+        b = c 
+        summation = summation + b 
       
     return summation 
 
